@@ -15,4 +15,9 @@ app.get('/health', (req, res) => {
     res.status(200).json({ status: 'OK' });
 });
 
+// Debug route
+app.get('/test', (req, res) => {
+    res.status(200).json({ message: 'server working' });
+});
+
 export default app;

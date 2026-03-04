@@ -1,0 +1,45 @@
+--- Test 1 ---
+Request: {"email":"doc@hillvalley.edu","phoneNumber":"123456"}
+Response: {
+  "contact": {
+    "primaryContactId": 2,
+    "emails": [
+      "doc@hillvalley.edu"
+    ],
+    "phoneNumbers": [
+      "123456"
+    ],
+    "secondaryContactIds": []
+  }
+}
+
+--- Test 2 ---
+Request: {"email":"doc@hillvalley.edu"}
+Response: {
+  "contact": {
+    "primaryContactId": 2,
+    "emails": [
+      "doc@hillvalley.edu"
+    ],
+    "phoneNumbers": [
+      "123456"
+    ],
+    "secondaryContactIds": []
+  }
+}
+
+--- Test 3 ---
+Request: {"phoneNumber":"123456"}
+Response: {
+  "contact": {
+    "primaryContactId": 2,
+    "emails": [
+      "doc@hillvalley.edu"
+    ],
+    "phoneNumbers": [
+      "123456"
+    ],
+    "secondaryContactIds": []
+  }
+}
+
